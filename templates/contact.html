@@ -1,0 +1,31 @@
+
+
+
+<!-- CONTACT FORM -->
+<div class="container contact-container">
+    <ol class="breadcrumb bcrumb-margins">
+        <li class="breadcrumb-item"> 
+            <a href="{% url 'shop:index' %}"> <i class="fas fa-home fa-lg"></i> </a>
+        </li>
+        <li class="breadcrumb-item active"> Contact Form </li>
+    </ol>
+
+    <h2> Contact Us <i class="fas fa-inbox"></i></h2>
+    
+    <div class="row">
+        <div id="form-area" class="col-md-6 mt-4">
+            <form method="post">
+                <fieldset>
+                    <div class="form-group">
+                        <legend>Contact Form</legend>
+                        {% csrf_token %} {{ form  }}
+                        <p class="req-field"> * Required fields </p>
+                        <input class="btn btn-success" type="submit" value="Submit Enquiry">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        
+
+<!-- BACK TO TOP -->
+
