@@ -56,7 +56,8 @@ class CategoryList(mixins.CreateModelMixin,
         if not pk:
             return Category.objects.all()[:10]
 
-        return Category.objects.filter(pk=pk)
+
+        return Category.objects.all().order_by('pk')
 
 
 
