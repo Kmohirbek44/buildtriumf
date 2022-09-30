@@ -17,7 +17,7 @@ class productserialers(serializers.ModelSerializer):
 class categoryserialers(serializers.ModelSerializer):
     class Meta:
         model=Category
-        exclude=("id",)
+        exclude=("name",)
     # category_id=serializers.IntegerField()
     # city_id=serializers.IntegerField()
     # name=serializers.CharField()

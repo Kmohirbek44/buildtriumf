@@ -52,9 +52,6 @@ class CategoryList(mixins.CreateModelMixin,
     serializer_class = categoryserialers
     permission_classes = (AllowAny,)
     def get_queryset(self):
-        pk=self.kwargs.get('pk')
-        if not pk:
-            return Category.objects.all()[:10]
 
 
         return Category.objects.all().order_by('pk')
