@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'shop.apps.ShopConfig',
-    'charts.apps.ChartsConfig',
     'drfsite.apps.DrfsiteConfig',
     'rest_framework',
     'djoser',
@@ -86,7 +85,7 @@ WSGI_APPLICATION = 'myshop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/home/KMohirbek1999/build/db.sqlite3',
+        'NAME': 'db.sqlite3',
     }
 }
 
@@ -144,7 +143,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=(
-    '/home/KMohirbek1999/build/static',
+    'static',
 )
 
 
@@ -153,7 +152,7 @@ STATICFILES_DIRS=(
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-MEDIA_URL = '/home/KMohirbek1999/build/media/'
-MEDIA_URL = '/home/KMohirbek1999/build/media/'
-STATIC_ROOT = '/home/KMohirbek1999/build/staticfiles'
-MEDIA_ROOT = '/home//KMohirbek1999/build/media'
+MEDIA_URL = 'media/'
+MEDIA_URL = 'media/'
+STATIC_ROOT = 'staticfiles'
+MEDIA_ROOT = 'media'
